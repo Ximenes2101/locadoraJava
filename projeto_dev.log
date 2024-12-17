@@ -1,0 +1,420 @@
+2024-12-17T14:13:32.999-03:00  INFO 2828 --- [locadora] [restartedMain] com.lab.locadora.LocadoraApplication     : Starting LocadoraApplication using Java 21.0.4 with PID 2828 (C:\Users\user\Downloads\locadora\locadora\target\classes started by user in C:\Users\user\Downloads\locadora\locadora)
+2024-12-17T14:13:33.003-03:00  INFO 2828 --- [locadora] [restartedMain] com.lab.locadora.LocadoraApplication     : The following 1 profile is active: "dev"
+2024-12-17T14:13:33.072-03:00  INFO 2828 --- [locadora] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-17T14:13:33.072-03:00  INFO 2828 --- [locadora] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-17T14:13:33.688-03:00  INFO 2828 --- [locadora] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-17T14:13:33.747-03:00  INFO 2828 --- [locadora] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
+2024-12-17T14:13:34.595-03:00  INFO 2828 --- [locadora] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-17T14:13:34.609-03:00  INFO 2828 --- [locadora] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-17T14:13:34.609-03:00  INFO 2828 --- [locadora] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-17T14:13:34.645-03:00  INFO 2828 --- [locadora] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-17T14:13:34.646-03:00  INFO 2828 --- [locadora] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1572 ms
+2024-12-17T14:13:34.684-03:00  INFO 2828 --- [locadora] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-17T14:13:34.919-03:00  INFO 2828 --- [locadora] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@365e0e53
+2024-12-17T14:13:34.921-03:00  INFO 2828 --- [locadora] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-17T14:13:34.933-03:00  INFO 2828 --- [locadora] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/locadora'
+2024-12-17T14:13:35.088-03:00  INFO 2828 --- [locadora] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-17T14:13:35.146-03:00  INFO 2828 --- [locadora] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-17T14:13:35.187-03:00  INFO 2828 --- [locadora] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-17T14:13:35.266-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2e1c008e
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2e1c008e
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@2e1c008e
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@9243bb4
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@9243bb4
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@4ee94b8b
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@4ee94b8b
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@2171e17c
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@2171e17c
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@6fa79dac
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@6fa79dac
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@6fa79dac
+2024-12-17T14:13:35.267-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@4776f277
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@4776f277
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@4776f277
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@43c75c01
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@43c75c01
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@6d932f04
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@3e8a95e7
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@3e8a95e7
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@4e9f3d0b
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@37c1578d
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@43dea57e
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@43dea57e
+2024-12-17T14:13:35.268-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@43dea57e
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@2991254f
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@2991254f
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@2991254f
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@1ed13213
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@1ed13213
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@1ed13213
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@2311737b
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@2311737b
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@2311737b
+2024-12-17T14:13:35.269-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@1552c732
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@1552c732
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@1552c732
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@3549238a
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@3549238a
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@229fde9a
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@229fde9a
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@a3dfb19
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@a3dfb19
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@a3dfb19
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@9d5c63b
+2024-12-17T14:13:35.270-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@757cf1f8
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@757cf1f8
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@29cb9ac3
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@4ccb59d0
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@4ccb59d0
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@4ccb59d0
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@6b08aa6c
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@796965c4
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@c81e5a8
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@1a923831
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@1a923831
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@34e7aac5
+2024-12-17T14:13:35.271-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@34e7aac5
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@612aed8
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@5bdb717
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@e654421
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@7dd76aa
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@14aa7ce7
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@7cc7746a
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@58a7739f
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@58a7739f
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@34233607
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@34233607
+2024-12-17T14:13:35.272-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@73292920
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@73292920
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@340a770b
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@340a770b
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@5752d19e
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@5752d19e
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7a6c567d
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@40b61039
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@27e3950b
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@27e3950b
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@667c6e48
+2024-12-17T14:13:35.273-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7ebb0344
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@efce372
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@358c646b
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@358c646b
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@300742bc
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@1600d6db
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@7f0e401a
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@7f0e401a
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@29f7ccac
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@29f7ccac
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@236f698c
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@236f698c
+2024-12-17T14:13:35.274-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@236f698c
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@33c9d534
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@33c9d534
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@33c9d534
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@3e4a4dc7
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@29cf640e
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@71b45bb2
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@71b45bb2
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@ca950c5
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@ca950c5
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@ca950c5
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@606110e2
+2024-12-17T14:13:35.275-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@325ce7f4
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@616653c6
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@616653c6
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@278f1857
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@278f1857
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@278f1857
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@4f01fa44
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@4f01fa44
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@1a37d717
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@1a37d717
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@491c4ff4
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@491c4ff4
+2024-12-17T14:13:35.276-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@160ebb20
+2024-12-17T14:13:35.277-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@160ebb20
+2024-12-17T14:13:35.277-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@569da07f
+2024-12-17T14:13:35.277-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@569da07f
+2024-12-17T14:13:35.277-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@72b65ad4
+2024-12-17T14:13:35.277-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@59fed899
+2024-12-17T14:13:35.277-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@3acabf3d
+2024-12-17T14:13:35.277-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@16f6e43
+2024-12-17T14:13:35.277-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@41cfe440
+2024-12-17T14:13:35.281-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@35f8da53
+2024-12-17T14:13:35.281-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@35f8da53
+2024-12-17T14:13:35.282-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@103a4d67
+2024-12-17T14:13:35.283-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@2093bc04
+2024-12-17T14:13:35.283-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@6dad2fcc
+2024-12-17T14:13:35.283-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@2c9b9e7b
+2024-12-17T14:13:35.283-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@6e08bffa
+2024-12-17T14:13:35.283-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@53464da3
+2024-12-17T14:13:35.283-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@5711cb48
+2024-12-17T14:13:35.283-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@2789ef97
+2024-12-17T14:13:35.283-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@cd563f3
+2024-12-17T14:13:35.487-03:00  INFO 2828 --- [locadora] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-17T14:13:35.568-03:00  INFO 2828 --- [locadora] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-17T14:13:35.577-03:00 DEBUG 2828 --- [locadora] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@3bf1534f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@5e2ac6e4)
+2024-12-17T14:13:35.577-03:00 DEBUG 2828 --- [locadora] [restartedMain] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1e20b8b8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@675e547e)
+2024-12-17T14:13:35.579-03:00 DEBUG 2828 --- [locadora] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2004, BlobTypeDescriptor(BLOB_BINDING)) replaced previous registration(BlobTypeDescriptor(DEFAULT))
+2024-12-17T14:13:35.579-03:00 DEBUG 2828 --- [locadora] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(CLOB_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-12-17T14:13:35.587-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration JAVA_OBJECT -> org.hibernate.type.JavaObjectType@26506337
+2024-12-17T14:13:35.587-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@26506337
+2024-12-17T14:13:35.587-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Type registration key [java.lang.Object] overrode previous entry : `org.hibernate.type.JavaObjectType@35f8da53`
+2024-12-17T14:13:35.591-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2024-12-17T14:13:35.591-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2024-12-17T14:13:35.591-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2024-12-17T14:13:35.594-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+2024-12-17T14:13:35.595-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2024-12-17T14:13:35.595-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+2024-12-17T14:13:35.595-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+2024-12-17T14:13:35.595-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2024-12-17T14:13:35.595-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+2024-12-17T14:13:35.596-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+2024-12-17T14:13:35.596-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2024-12-17T14:13:35.596-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+2024-12-17T14:13:35.597-03:00 DEBUG 2828 --- [locadora] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7ceadb42] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4caee345]
+2024-12-17T14:13:36.378-03:00  INFO 2828 --- [locadora] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-17T14:13:36.378-03:00 DEBUG 2828 --- [locadora] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7ceadb42] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@48fad649]
+2024-12-17T14:13:36.390-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    set client_min_messages = WARNING
+2024-12-17T14:13:36.391-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists locacao 
+       drop constraint if exists FKm0osglfinytdam6egsv8xpcdv
+2024-12-17T14:13:36.393-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists locacao 
+       drop constraint if exists FKf3qmqok8y5agpv105983s52rx
+2024-12-17T14:13:36.393-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists locacao 
+       drop constraint if exists FKdp7q9w224yqs7al78ntljxxg
+2024-12-17T14:13:36.393-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists categoria cascade
+2024-12-17T14:13:36.395-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists clientes cascade
+2024-12-17T14:13:36.395-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists funcionario cascade
+2024-12-17T14:13:36.395-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists locacao cascade
+2024-12-17T14:13:36.395-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists veiculo cascade
+2024-12-17T14:13:36.396-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_categoria
+2024-12-17T14:13:36.396-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_cliente
+2024-12-17T14:13:36.396-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_funcionario
+2024-12-17T14:13:36.397-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_locacao
+2024-12-17T14:13:36.397-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_veiculo
+2024-12-17T14:13:36.401-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_categoria start with 1 increment by 1
+2024-12-17T14:13:36.408-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_cliente start with 1 increment by 1
+2024-12-17T14:13:36.409-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_funcionario start with 1 increment by 50
+2024-12-17T14:13:36.411-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_locacao start with 1 increment by 1
+2024-12-17T14:13:36.412-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_veiculo start with 1 increment by 50
+2024-12-17T14:13:36.416-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create table categoria (
+        id integer not null,
+        status smallint check (status between 0 and 2),
+        descricao varchar(255) not null,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+2024-12-17T14:13:36.429-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create table clientes (
+        id integer not null,
+        status smallint check (status between 0 and 1),
+        cpf varchar(255) not null,
+        endereco varchar(255) not null,
+        nome varchar(255) not null,
+        telefone varchar(255) not null,
+        primary key (id)
+    )
+2024-12-17T14:13:36.436-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create table funcionario (
+        id integer not null,
+        salario numeric(17,2) not null,
+        status smallint check (status between 0 and 1),
+        cpf varchar(255) not null,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+2024-12-17T14:13:36.441-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create table locacao (
+        ativo boolean not null,
+        cliente_id integer,
+        data_fim date,
+        data_inicio date,
+        funcionario_id integer,
+        id integer not null,
+        valor_total numeric(17,2) not null,
+        veiculo_id integer,
+        primary key (id)
+    )
+2024-12-17T14:13:36.444-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    create table veiculo (
+        ano date,
+        id integer not null,
+        status smallint check (status between 0 and 2),
+        categoria varchar(255) not null,
+        marca varchar(255) not null,
+        modelo varchar(255) not null,
+        placa varchar(255) not null,
+        primary key (id)
+    )
+2024-12-17T14:13:36.449-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists locacao 
+       add constraint FKm0osglfinytdam6egsv8xpcdv 
+       foreign key (cliente_id) 
+       references clientes
+2024-12-17T14:13:36.454-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists locacao 
+       add constraint FKf3qmqok8y5agpv105983s52rx 
+       foreign key (funcionario_id) 
+       references funcionario
+2024-12-17T14:13:36.456-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists locacao 
+       add constraint FKdp7q9w224yqs7al78ntljxxg 
+       foreign key (veiculo_id) 
+       references veiculo
+2024-12-17T14:13:36.459-03:00 TRACE 2828 --- [locadora] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@48fad649] for TypeConfiguration
+2024-12-17T14:13:36.459-03:00  INFO 2828 --- [locadora] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17T14:13:36.894-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_categoria')
+2024-12-17T14:13:36.916-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_categoria')
+2024-12-17T14:13:36.917-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_categoria')
+2024-12-17T14:13:36.946-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        categoria
+        (descricao, nome, status, id) 
+    values
+        (?, ?, ?, ?)
+2024-12-17T14:13:36.953-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        categoria
+        (descricao, nome, status, id) 
+    values
+        (?, ?, ?, ?)
+2024-12-17T14:13:36.954-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        categoria
+        (descricao, nome, status, id) 
+    values
+        (?, ?, ?, ?)
+2024-12-17T14:13:36.960-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_veiculo')
+2024-12-17T14:13:36.962-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_veiculo')
+2024-12-17T14:13:36.964-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        veiculo
+        (ano, categoria, marca, modelo, placa, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-12-17T14:13:36.967-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        veiculo
+        (ano, categoria, marca, modelo, placa, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-12-17T14:13:36.968-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        veiculo
+        (ano, categoria, marca, modelo, placa, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-12-17T14:13:36.971-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_cliente')
+2024-12-17T14:13:36.972-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_cliente')
+2024-12-17T14:13:36.974-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        clientes
+        (cpf, endereco, nome, status, telefone, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2024-12-17T14:13:36.976-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        clientes
+        (cpf, endereco, nome, status, telefone, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2024-12-17T14:13:36.979-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_funcionario')
+2024-12-17T14:13:36.981-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_funcionario')
+2024-12-17T14:13:36.984-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        funcionario
+        (cpf, nome, salario, status, id) 
+    values
+        (?, ?, ?, ?, ?)
+2024-12-17T14:13:36.987-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        funcionario
+        (cpf, nome, salario, status, id) 
+    values
+        (?, ?, ?, ?, ?)
+2024-12-17T14:13:36.990-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_locacao')
+2024-12-17T14:13:36.992-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    select
+        nextval('seq_locacao')
+2024-12-17T14:13:36.995-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        locacao
+        (ativo, cliente_id, data_fim, data_inicio, funcionario_id, valor_total, veiculo_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-12-17T14:13:36.998-03:00 DEBUG 2828 --- [locadora] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        locacao
+        (ativo, cliente_id, data_fim, data_inicio, funcionario_id, valor_total, veiculo_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-12-17T14:13:37.085-03:00  WARN 2828 --- [locadora] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-17T14:13:37.490-03:00  INFO 2828 --- [locadora] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-17T14:13:37.525-03:00  INFO 2828 --- [locadora] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-17T14:13:37.534-03:00  INFO 2828 --- [locadora] [restartedMain] com.lab.locadora.LocadoraApplication     : Started LocadoraApplication in 5.063 seconds (process running for 5.632)
+2024-12-17T14:14:43.710-03:00  INFO 2828 --- [locadora] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-17T14:14:43.713-03:00  INFO 2828 --- [locadora] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-17T14:14:43.716-03:00  INFO 2828 --- [locadora] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-17T14:14:43.717-03:00 TRACE 2828 --- [locadora] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@48fad649] for TypeConfiguration
+2024-12-17T14:14:43.717-03:00 DEBUG 2828 --- [locadora] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@414aa74a] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@48fad649]
+2024-12-17T14:14:43.719-03:00  INFO 2828 --- [locadora] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-17T14:14:43.722-03:00  INFO 2828 --- [locadora] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
